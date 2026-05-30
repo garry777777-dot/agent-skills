@@ -358,6 +358,17 @@ Is the work one perspective on one artifact?
 
 ---
 
+## Token Budget and Model Selection
+
+Before choosing a pattern, estimate cost and pick the right model tier. See [`references/token-budget.md`](token-budget.md) for:
+
+- Provider-agnostic model tier map (Anthropic, OpenAI, Google, xAI, Meta)
+- Per-task and per-persona model recommendations
+- Token budget ranges per pattern (direct invocation → fan-out → dynamic workflows → Agent Teams)
+- Practical guardrails: pilot before scaling, ceiling before you start, Haiku for read-only cells
+
+---
+
 ## When to add a new pattern to this catalog
 
 Add a new entry only after:
