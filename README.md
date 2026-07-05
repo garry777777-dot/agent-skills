@@ -118,9 +118,9 @@ Skills are plain Markdown - they work with any agent that accepts system prompts
 
 ---
 
-## All 23 Skills
+## All 25 Skills
 
-The commands above are entry points. The pack includes 23 skills total — 22 lifecycle skills plus the `using-agent-skills` meta-skill. Each skill is a structured workflow with steps, verification gates, and anti-rationalization tables. You can also reference any skill directly.
+The commands above are entry points. The pack includes 25 skills total — 24 lifecycle skills plus the `using-agent-skills` meta-skill. Each skill is a structured workflow with steps, verification gates, and anti-rationalization tables. You can also reference any skill directly.
 
 ### Meta - Discover which skill applies
 
@@ -179,6 +179,12 @@ The commands above are entry points. The pack includes 23 skills total — 22 li
 | [deprecation-and-migration](skills/deprecation-and-migration/SKILL.md) | Code-as-liability mindset, compulsory vs advisory deprecation, migration patterns, zombie code removal | Removing old systems, migrating users, or sunsetting features |
 | [documentation-and-adrs](skills/documentation-and-adrs/SKILL.md) | Architecture Decision Records, API docs, inline documentation standards - document the *why* | Making architectural decisions, changing APIs, or shipping features |
 | [shipping-and-launch](skills/shipping-and-launch/SKILL.md) | Pre-launch checklists, feature flag lifecycle, staged rollouts, rollback procedures, monitoring setup | Preparing to deploy to production |
+
+### Grow - Cost-efficient GTM automation
+
+| Skill | What It Does | Use When |
+|-------|-------------|----------|
+| [lead-generation-and-cold-outbound](skills/lead-generation-and-cold-outbound/SKILL.md) | Waterfall company/contact sourcing, self-correcting recurring jobs, goal-mode list contracts, a recurring campaign-optimization loop, and open-source fallbacks over paid SaaS | Building or automating a cold-outbound lead list, or cutting GTM tooling spend |
 
 ---
 
@@ -242,7 +248,7 @@ Every skill follows a consistent anatomy:
 
 ```
 agent-skills/
-├── skills/                            # 23 skills (22 lifecycle + 1 meta)
+├── skills/                            # 25 skills (24 lifecycle + 1 meta)
 │   ├── interview-me/                  #   Define
 │   ├── idea-refine/                   #   Define
 │   ├── spec-driven-development/       #   Define
@@ -265,6 +271,7 @@ agent-skills/
 │   ├── deprecation-and-migration/     #   Ship
 │   ├── documentation-and-adrs/        #   Ship
 │   ├── shipping-and-launch/           #   Ship
+│   ├── lead-generation-and-cold-outbound/ # Grow
 │   └── using-agent-skills/            #   Meta: how to use this pack
 ├── agents/                            # 3 specialist personas
 ├── references/                        # 4 supplementary checklists
